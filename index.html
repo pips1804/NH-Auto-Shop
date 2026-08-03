@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH Auto Shop | Car Service & Repair - Biñan, Laguna</title>
+    <meta name="description"
+        content="NH Auto Shop in Biñan, Laguna. One stop shop for all your car needs! Preventive Maintenance Service (PMS), Engine Repair, Electrical, A/C Service, and 30-Point Inspection. Call 0966 965 0822.">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:ital,wght@0,500;0,700;1,600;1,700&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> Brgy. Canlalay, Biñan, Laguna 4024</span>
+                <span class="divider">|</span>
+                <span><i class="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="top-promo">
+                <span class="badge-promo"><i class="fa-solid fa-car"></i> CAR SERVICE</span>
+                <span class="promo-text">One Stop Shop for All Your Car Needs in Biñan, Laguna!</span>
+                <a href="tel:09669650822" class="promo-btn">Call 0966 965 0822</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo" aria-label="NH Auto Shop Home">
+                <img src="img/logo.png" alt="NH Auto Shop Mascot Logo" class="logo-img">
+                <div class="brand-text">
+                    <span class="brand-nh">NH</span>
+                    <span class="brand-auto">AUTO</span>
+                    <span class="brand-shop">SHOP</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#pms" class="nav-link">PMS Checklist</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Buttons -->
+            <div class="header-actions">
+                <a href="tel:09669650822" class="btn-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="phone-num">0966 965 0822</span>
+                </a>
+                <span class="action-divider"></span>
+                <a href="tel:09669650822" class="btn-primary"><i class="fa-solid fa-phone"></i> Call Us</a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OFF-CANVAS DRAWER -->
+    <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <div class="brand-text text-sm">
+                <span class="brand-nh">NH</span>
+                <span class="brand-auto">AUTO</span>
+                <span class="brand-shop">SHOP</span>
+            </div>
+            <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About Us</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#pms" class="mobile-link">PMS Checklist</a></li>
+            <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+            <li><a href="#contact" class="mobile-link">Contact & Location</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <a href="tel:09669650822" class="btn-primary w-full"><i class="fa-solid fa-phone"></i> Call 0966 965
+                0822</a>
+            <p class="drawer-hours"><i class="fa-solid fa-clock"></i> Mon-Sat: 8:00AM - 6:00PM</p>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg">
+            <div class="hero-bg-slide active" style="background-image: url('img/hero/hero-3.jpeg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('img/hero/hero-1.jpeg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('img/hero/hero-2.jpeg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-tagline">
+                    <span class="tagline-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="tagline-text">WE CHECK. WE CARE. YOU DRIVE SAFE.</span>
+                </div>
+
+                <h1 class="hero-title">
+                    ONE STOP SHOP FOR ALL YOUR <span class="gradient-text">CAR NEEDS!</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Premier auto repair & preventive maintenance service in Biñan, Laguna. Equipped with heavy-duty
+                    lifts, computer diagnostics, and expert mechanics to keep your vehicle running at peak performance.
+                </p>
+
+                <div class="hero-promo-badge">
+                    <div class="promo-badge-icon"><i class="fa-solid fa-square-check"></i></div>
+                    <div class="promo-badge-content">
+                        <span class="promo-title">COMPLETE CAR REPAIR & MAINTENANCE</span>
+                        <span class="promo-desc">Preventive Maintenance (PMS), Engine Repair, Electrical & Aircon
+                            Service.</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="tel:09669650822" class="btn-hero-primary"><i class="fa-solid fa-phone"></i> Call 0966 965
+                        0822</a>
+                    <a href="#services" class="btn-hero-secondary"><i class="fa-solid fa-gears"></i> View Our
+                        Services</a>
+                    <button class="btn-hero-flyer" id="btn-open-flyer"><i class="fa-solid fa-image"></i> View Service
+                        Menu Flyer</button>
+                </div>
+
+                <!-- Hero Features Grid -->
+                <div class="hero-pillars">
+                    <div class="pillar-item">
+                        <div class="pillar-icon"><i class="fa-solid fa-user-gear"></i></div>
+                        <div class="pillar-text">
+                            <strong>Expert Technicians</strong>
+                            <span>Certified & Experienced</span>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <div class="pillar-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div class="pillar-text">
+                            <strong>Modern Equipment</strong>
+                            <span>Advanced Diagnostic Scanners</span>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <div class="pillar-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="pillar-text">
+                            <strong>Quality Parts</strong>
+                            <span>High-Grade OEM & Replacement</span>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <div class="pillar-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <div class="pillar-text">
+                            <strong>Fair & Honest</strong>
+                            <span>Transparent & Reasonable Rates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="grid grid-2 align-center">
+                <div class="about-images">
+                    <div class="img-wrapper main-img">
+                        <img src="img/site/img-1.jpg" alt="NH Auto Shop Garage Workshop" loading="lazy">
+                        <div class="experience-badge">
+                            <span class="exp-num">100%</span>
+                            <span class="exp-lbl">Honest & Reliable</span>
+                        </div>
+                    </div>
+                    <div class="img-wrapper sub-img">
+                        <img src="img/site/img-2.jpg" alt="Technician Servicing Vehicle on Lift" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-car-on"></i> ABOUT NH AUTO SHOP
+                    </div>
+                    <h2 class="section-title">
+                        WE FIX IT <span class="gradient-text">RIGHT!</span>
+                    </h2>
+                    <p class="section-desc">
+                        Founded in 2024 and officially commencing operations in 2026, <strong>NH Auto Shop</strong>
+                        takes pride in delivering top-caliber automotive repair and preventive maintenance services.
+                        Conveniently located in Brgy. Canlalay, Biñan, Laguna, our spacious workshop is fully equipped
+                        with modern hydraulic lifts, computerized scanners, and specialized toolkits to handle vehicles
+                        of all makes and models.
+                    </p>
+                    <p class="section-desc">
+                        Whether you need routine engine oil changes, complex suspension overhauls, or full computer
+                        diagnostics, our skilled technicians handle your car with absolute precision and honesty.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>State-of-the-Art Workshop</h4>
+                                <p>Heavy-duty hydraulic lifts & clean pegboard tool organization.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Complete Vehicle Care</h4>
+                                <p>From 30-Point Comprehensive Inspection to major engine rebuilds.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Customer-First Philosophy</h4>
+                                <p>Clear communication, accurate quotes, and zero hidden charges.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-counter-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">2024</span>
+                            <span class="stat-label">Founded</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">2026</span>
+                            <span class="stat-label">Operations Commenced</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">30-Pt</span>
+                            <span class="stat-label">Inspection Standard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (FROM SERVICES.JPEG) -->
+    <section class="services-section section-padding bg-darker" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-toolbox"></i> OUR SERVICES
+                </div>
+                <h2 class="section-title">
+                    COMPLETE AUTOMOTIVE <span class="gradient-text">CARE & REPAIR</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore our comprehensive suite of car maintenance and repair solutions engineered to keep your car
+                    in top condition.
+                </p>
+            </div>
+
+            <!-- Core 6 Main Services Grid (Icon Row from services.jpeg) -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon-wrap">
+                        <i class="fa-solid fa-oil-can"></i>
+                    </div>
+                    <h3>Engine Repair & Diagnostic</h3>
+                    <p>Complete diagnostics, oil leak repair, cylinder head servicing, and full engine overhauls for
+                        optimum horsepower.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Diagnostics & Repair</li>
+                        <li><i class="fa-solid fa-check"></i> Engine Oil Change</li>
+                        <li><i class="fa-solid fa-check"></i> Oil Filter Replacement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon-wrap">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Electrical System Repair</h3>
+                    <p>Precision troubleshooting of car electronics, alternator charging systems, starter motors,
+                        sensors, and full rewiring.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Wiring & Sensor Check</li>
+                        <li><i class="fa-solid fa-check"></i> Battery Testing & Report</li>
+                        <li><i class="fa-solid fa-check"></i> Charging System Repair</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon-wrap">
+                        <i class="fa-solid fa-compact-disc"></i>
+                    </div>
+                    <h3>Brake Service & Inspection</h3>
+                    <p>Ensure maximum safety with brake pad replacements, disc rotor resurfacing, brake fluid flush, and
+                        ABS line inspection.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Safety First Inspection</li>
+                        <li><i class="fa-solid fa-check"></i> Brake Pad & Fluid Check</li>
+                        <li><i class="fa-solid fa-check"></i> Rotor & Caliper Repair</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon-wrap">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Suspension & Steering Repair</h3>
+                    <p>Enjoy a smooth and safe ride. We repair shock absorbers, struts, tie rods, ball joints, bushing
+                        replacements, and power steering.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Shock & Strut Servicing</li>
+                        <li><i class="fa-solid fa-check"></i> Smooth & Safe Ride Check</li>
+                        <li><i class="fa-solid fa-check"></i> Underchassis Noise Fix</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon-wrap">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3>Aircon (A/C) Service</h3>
+                    <p>Stay cool on every drive. Aircon freon charging, evaporator cleaning, compressor overhaul, leak
+                        testing, and cabin filter replacement.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Freon Top-Up & Charge</li>
+                        <li><i class="fa-solid fa-check"></i> A/C Leak Detection</li>
+                        <li><i class="fa-solid fa-check"></i> Cooling System Clean</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon-wrap">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3>Computer Diagnostics</h3>
+                    <p>Advanced OBD2 computer scanning to identify check engine light warnings, sensor errors,
+                        transmission codes, and electronic faults.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Full ECU Scan</li>
+                        <li><i class="fa-solid fa-check"></i> Clear Fault Codes</li>
+                        <li><i class="fa-solid fa-check"></i> Real-time Sensor Data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKSHOP SHOWCASE GALLERY SECTION -->
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-camera"></i> OUR WORKSHOP IN ACTION
+                </div>
+                <h2 class="section-title">
+                    INSIDE <span class="gradient-text">NH AUTO SHOP</span>
+                </h2>
+                <p class="section-subtitle">
+                    Take a look inside our clean, fully-equipped garage facility in Biñan, Laguna.
+                </p>
+            </div>
+
+            <!-- Spotlight Carousel Container -->
+            <div class="spotlight-carousel-wrapper">
+                <button class="carousel-btn btn-prev" id="gallery-prev" aria-label="Previous Image">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="spotlight-carousel-track" id="gallery-track">
+                    <div class="gallery-slide" data-index="0">
+                        <img src="img/site/img-1.jpg" alt="NH Auto Shop Hydraulic Lift Bay" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Hydraulic Lifts & Service Bay</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="1">
+                        <img src="img/site/img-2.jpg" alt="Underchassis & Lift Inspection" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag"><i class="fa-solid fa-car-side"></i> Underchassis & Lift Inspection</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="2">
+                        <img src="img/site/img-3.jpg" alt="Professional Tool & Equipment Setup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag"><i class="fa-solid fa-toolbox"></i> Heavy Duty Diagnostic Equipment</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="3">
+                        <img src="img/site/img-4.jpg" alt="Engine Servicing & Oil Maintenance" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag"><i class="fa-solid fa-oil-can"></i> Engine Servicing & Oil Change</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="4">
+                        <img src="img/site/img-5.jpg" alt="Master Mechanic Inspection" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag"><i class="fa-solid fa-user-check"></i> Thorough Vehicle Inspection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn btn-next" id="gallery-next" aria-label="Next Image">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="carousel-dots" id="gallery-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PMS FEATURED CHECKLIST SECTION -->
+    <section class="pms-section section-padding" id="pms">
+        <div class="container">
+            <div class="pms-banner">
+                <div class="pms-header-content">
+                    <span class="pms-badge"><i class="fa-solid fa-shield-heart"></i> FEATURED PACKAGE</span>
+                    <h2 class="pms-title">PMS - PREVENTIVE MAINTENANCE SERVICE</h2>
+                    <p class="pms-tagline">"KEEP YOUR CAR IN TOP CONDITION"</p>
+                </div>
+            </div>
+
+            <!-- Why PMS 4 Benefits Row -->
+            <div class="pms-benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="benefit-text">
+                        <h4>PREVENT PROBLEMS</h4>
+                        <p>Catch small issues before they become big, expensive problems.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="benefit-text">
+                        <h4>IMPROVE PERFORMANCE</h4>
+                        <p>Keep your engine running at its peak efficiency & responsiveness.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-gas-pump"></i></div>
+                    <div class="benefit-text">
+                        <h4>BETTER FUEL EFFICIENCY</h4>
+                        <p>Save more on fuel expenses with regular maintenance care.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-car-battery"></i></div>
+                    <div class="benefit-text">
+                        <h4>EXTEND ENGINE LIFE</h4>
+                        <p>Regular care today guarantees longer vehicle lifespan tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete Check & Care Interactive List -->
+            <div class="pms-checklist-wrapper">
+                <div class="checklist-header">
+                    <h3><i class="fa-solid fa-clipboard-check"></i> COMPLETE CHECK & CARE Checklist</h3>
+                    <p>Click any item to inspect what is checked during your service appointment:</p>
+                </div>
+
+                <div class="checklist-grid">
+                    <div class="check-item active">
+                        <div class="item-num">01</div>
+                        <div class="item-content">
+                            <h4>Engine Oil Change</h4>
+                            <p>Premium Quality Oil filled to exact specifications for smooth lubrication.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">02</div>
+                        <div class="item-content">
+                            <h4>Oil Filter Replacement</h4>
+                            <p>High Quality Filter installed to catch impurities and metal shavings.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">03</div>
+                        <div class="item-content">
+                            <h4>Air Filter Check</h4>
+                            <p>Clean Air, Better Mileage. Inspected & cleaned or replaced if clogged.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">04</div>
+                        <div class="item-content">
+                            <h4>Brake Inspection</h4>
+                            <p>Safety First. Thickness measurement of brake pads and rotor condition.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">05</div>
+                        <div class="item-content">
+                            <h4>Battery Test</h4>
+                            <p>Check & Report voltage output, cranking amps, and terminal corrosion.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">06</div>
+                        <div class="item-content">
+                            <h4>Suspension Check</h4>
+                            <p>Smooth & Safe Ride. Inspection of shocks, struts, and underchassis bushings.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">07</div>
+                        <div class="item-content">
+                            <h4>Electrical System Repair</h4>
+                            <p>Wiring, Sensors, Charging System diagnostics to ensure error-free drive.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">08</div>
+                        <div class="item-content">
+                            <h4>Fluid Level Check</h4>
+                            <p>All Fluids Checked (Coolant, Transmission, Brake, Power Steering, Washer).</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">09</div>
+                        <div class="item-content">
+                            <h4>Tire Check</h4>
+                            <p>Pressure & Condition inspection, tread depth check for safe road grip.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">10</div>
+                        <div class="item-content">
+                            <h4>Engine Repair</h4>
+                            <p>Diagnostics & Repair of minor leaks, idle surge, or abnormal engine noise.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+
+                    <div class="check-item highlight-item">
+                        <div class="item-num"><i class="fa-solid fa-star"></i></div>
+                        <div class="item-content">
+                            <h4>30-Point Inspection</h4>
+                            <p>Complete Vehicle Check encompassing lights, belts, hoses, wipers, & underbody.</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </div>
+                </div>
+
+                <div class="pms-cta-box">
+                    <div class="cta-info">
+                        <h3>Need Preventive Maintenance for Your Vehicle?</h3>
+                        <p>Bring your car to NH Auto Shop today or call us directly at <strong>0966 965 0822</strong>
+                        </p>
+                    </div>
+                    <a href="tel:09669650822" class="btn-primary btn-large"><i class="fa-solid fa-phone"></i> Call 0966
+                        965 0822</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-section section-padding bg-darker" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-comments"></i> CLIENT FEEDBACK
+                </div>
+                <h2 class="section-title">
+                    WHAT OUR <span class="gradient-text">CUSTOMERS SAY</span>
+                </h2>
+                <p class="section-subtitle">
+                    Trusted by hundreds of car owners across Biñan, Santa Rosa, and Laguna.
+                </p>
+            </div>
+
+            <!-- Overall Rating Callout -->
+            <div class="rating-summary-card">
+                <div class="rating-big">5.0</div>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>Based on 50+ Google Reviews</span>
+                </div>
+                <div class="rating-badge"><i class="fa-brands fa-google"></i> Verified Google Business Reviews</div>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">ZT</div>
+                        <div class="reviewer-info">
+                            <h4>Zachary Tan</h4>
+                            <span class="car-model"><i class="fa-brands fa-google"></i> Google Review • 3 weeks
+                                ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <span>5.0</span> <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        "The quality of the car repair is good. The owner is Korean and he is also the main mechanic. He
+                        is very kind, there is a little miscommunication when you speak in English but he is very
+                        accommodating and he has a lot of experience with cars so your car is in good hands here 👍"
+                    </p>
+                    <span class="review-date">Service: Car Repair & Maintenance</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">LL</div>
+                        <div class="reviewer-info">
+                            <h4>L Lee</h4>
+                            <span class="car-model"><i class="fa-brands fa-google"></i> Google Review • 7 photos</span>
+                        </div>
+                        <div class="review-stars">
+                            <span>5.0</span> <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        "Reasonable price. Very good experience. Good service 😆"
+                    </p>
+                    <span class="review-date">Service: Auto Body & Trim Repair</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">JS</div>
+                        <div class="reviewer-info">
+                            <h4>Jin Park</h4>
+                            <span class="car-model"><i class="fa-brands fa-google"></i> Google Review</span>
+                        </div>
+                        <div class="review-stars">
+                            <span>5.0</span> <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        "Extremely clean auto shop in Biñan with complete heavy-duty lifts and diagnostic tools. The
+                        Korean master mechanic is super thorough, honest, and accommodating!"
+                    </p>
+                    <span class="review-date">Service: Preventive Maintenance (PMS) & Repair</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-location-crosshairs"></i> VISIT OR CONTACT US
+                </div>
+                <h2 class="section-title">
+                    GET IN TOUCH WITH <span class="gradient-text">NH AUTO SHOP</span>
+                </h2>
+                <p class="section-subtitle">
+                    Walk-ins, phone calls, and Facebook inquiries are always welcome! Reach out to us directly or visit
+                    our shop in Biñan, Laguna.
+                </p>
+            </div>
+
+            <div class="grid grid-2 gap-large">
+                <!-- Direct Contact Info Card -->
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <span class="form-tag"><i class="fa-solid fa-phone-volume"></i> DIRECT CONTACT</span>
+                        <h3>TALK TO OUR SERVICE ADVISOR</h3>
+                        <p>Have questions about your car or need repair inquiries? Call or visit us today.</p>
+                    </div>
+
+                    <div class="contact-cards-list">
+                        <div class="info-card">
+                            <div class="info-icon-box"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="info-content">
+                                <h4>Phone & Call Hotline</h4>
+                                <p><a href="tel:09669650822"
+                                        style="color: var(--color-nh-orange); font-weight: 700; font-size: 1.1rem;">0966
+                                        965 0822</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon-box"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="info-content">
+                                <h4>Official Facebook Page</h4>
+                                <p><a href="https://www.facebook.com/share/1K3tYsxf2f/" target="_blank" rel="noopener"
+                                        style="color: #1877F2; font-weight: 600;">NH AUTO SHOP Facebook Page <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-content">
+                                <h4>Shop Location Address</h4>
+                                <p>83QF+3Q4, National Highway, Brgy. Canlalay, Biñan, Laguna 4024</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon-box"><i class="fa-solid fa-clock"></i></div>
+                            <div class="info-content">
+                                <h4>Operating Hours</h4>
+                                <p><strong>MONDAY - SATURDAY:</strong> 8:00 AM to 6:00 PM</p>
+                                <p class="text-sub">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Location Wrapper -->
+                <div class="contact-info-wrapper">
+                    <div class="map-placeholder">
+                        <div class="map-iframe-box"
+                            style="margin-bottom: 1.25rem; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                            <iframe title="NH Auto Shop Google Maps Location" width="100%" height="260"
+                                style="border:0;" loading="lazy" allowfullscreen
+                                src="https://maps.google.com/maps?q=83QF%2B3Q4%2C%20National%20Highway%2C%20Barangay%20Canlalay%2C%20Bin%C3%A3n%2C%20Philippines%2C%204024&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="map-content">
+                            <h4>NH AUTO SHOP - Biñan, Laguna</h4>
+                            <p>83QF+3Q4, National Highway, Barangay Canlalay, Biñan, Philippines, 4024</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=83QF%2B3Q4%2C+National+Highway%2C+Barangay+Canlalay%2C+Bin%C3%A3n%2C+Philippines%2C+4024"
+                                target="_blank" rel="noopener" class="btn-map">
+                                <i class="fa-solid fa-diamond-turn-right"></i> Open Directions in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="brand-logo footer-logo">
+                        <img src="img/logo.png" alt="NH Auto Shop Logo" class="logo-img">
+                        <div class="brand-text">
+                            <span class="brand-nh">NH</span>
+                            <span class="brand-auto">AUTO</span>
+                            <span class="brand-shop">SHOP</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        CAR SERVICE & REPAIR. ONE STOP SHOP FOR ALL YOUR CAR NEEDS! Preventive maintenance, engine
+                        repairs, electrical diagnostics, brake and suspension services in Biñan, Laguna.
+                    </p>
+                    <div class="footer-tagline-pill">
+                        WE CHECK. WE CARE. YOU DRIVE SAFE.
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+                        <li><a href="#pms"><i class="fa-solid fa-angle-right"></i> PMS 11-Point Checklist</a></li>
+                        <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> Customer Reviews</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services Offered</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fa-solid fa-check"></i> Preventive Maintenance (PMS)</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-check"></i> Engine Repair & Diagnostics</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-check"></i> Electrical System & Wiring</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-check"></i> Brake Service & Inspection</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-check"></i> Suspension & Underchassis</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-check"></i> Aircon Cleaning & Freon</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Brgy. Canlalay, Biñan, Laguna 4024</li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:09669650822">0966 965 0822</a></li>
+                        <li><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/share/1K3tYsxf2f/"
+                                target="_blank" rel="noopener">NH AUTO SHOP Facebook</a></li>
+                        <li><i class="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NH AUTO SHOP. All Rights Reserved. Designed with peak performance & precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX / FLYER MODAL -->
+    <div class="modal-overlay" id="flyer-modal">
+        <div class="modal-content flyer-modal-content">
+            <button class="modal-close" id="flyer-close">&times;</button>
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-image"></i> NH AUTO SHOP - Official Service Menu</h3>
+                <p>Referenced directly from our shop's official PMS brochure flyer</p>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/services.jpeg" alt="NH Auto Shop Official Services Flyer" class="flyer-full-img">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FLOATING ACTION BUTTONS (MOBILE UI) -->
+    <div class="floating-actions">
+        <a href="tel:09669650822" class="fab-btn fab-phone" title="Call Us Now" aria-label="Call Us Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <button class="fab-btn fab-top" id="fab-top" title="Back to Top" aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
