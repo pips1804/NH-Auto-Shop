@@ -351,6 +351,7 @@ const translations = {
     rev_2_text: { ko: "작업장이 정말 깨끗하고 30가지 점검표로 차 상태를 꼼꼼히 설명해 주셔서 안심이 되었습니다. 가격도 아주 합리적이에요.", en: "Super clean workshop! They explained all 30 points of inspection clearly. Transparent pricing and fast service!" },
     rev_3_name: { ko: "제롬 산토스 (Jerome Santos)", en: "Jerome Santos" },
     rev_3_text: { ko: "컴퓨터 스캐너 진단으로 계속 꺼지던 엔진 경고등 원인을 바로 찾아 정비해 주셨습니다. 앞으로 정비는 무조건 여기로 옵니다!", en: "They quickly diagnosed my check engine light using their computer scanner. Professional team and fair repair rates!" },
+    btn_show_all_reviews: { ko: "모든 구글 후기 보기", en: "Show All Google Reviews" },
 
     // ----------------------------------------------------------------------
     // CONTACT & LOCATION SECTION

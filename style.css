@@ -1378,6 +1378,35 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0.8rem;
 }
 
+.reviews-more-box {
+    margin-top: 2.5rem;
+}
+
+.btn-show-reviews {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: #FFF;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-show-reviews:hover {
+    background: rgba(248, 147, 31, 0.15);
+    border-color: var(--color-nh-orange);
+    color: var(--color-nh-orange);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(248, 147, 31, 0.3);
+}
+
 /* --------------------------------------------------------------------------
    10.5 WORKSHOP SPOTLIGHT CAROUSEL (COVERFLOW STYLE)
    -------------------------------------------------------------------------- */
