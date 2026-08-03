@@ -234,4 +234,63 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* ----------------------------------------------------------------------
+       8. DUAL-LANGUAGE (KOREAN / ENGLISH) INITIALIZATION & MODAL
+       ---------------------------------------------------------------------- */
+    const langModal = document.getElementById('lang-modal');
+    const btnConfirmLang = document.getElementById('btn-confirm-lang');
+    const langCards = document.querySelectorAll('.lang-opt-card');
+    const langBtns = document.querySelectorAll('.lang-switcher-btn');
+
+    // Retrieve saved language or default to Korean ('ko')
+    let savedLang = localStorage.getItem('nh_autoshop_lang') || 'ko';
+    let selectedModalLang = savedLang;
+
+    // Apply initial language (Korean default)
+    if (typeof setLanguage === 'function') {
+        setLanguage(savedLang);
+    }
+
+    // If language selection modal exists
+    if (langModal) {
+        // Lock body scroll while welcome modal is active
+        if (langModal.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Select language option inside modal
+        langCards.forEach(card => {
+            card.addEventListener('click', () => {
+                langCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                selectedModalLang = card.getAttribute('data-lang');
+                if (typeof setLanguage === 'function') {
+                    setLanguage(selectedModalLang);
+                }
+            });
+        });
+
+        // Confirm button inside modal
+        if (btnConfirmLang) {
+            btnConfirmLang.addEventListener('click', () => {
+                if (typeof setLanguage === 'function') {
+                    setLanguage(selectedModalLang);
+                }
+                langModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    }
+
+    // Header & Mobile Drawer Language Switcher Buttons
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const chosenLang = btn.getAttribute('data-lang');
+            if (typeof setLanguage === 'function') {
+                setLanguage(chosenLang);
+            }
+        });
+    });
+
 });
