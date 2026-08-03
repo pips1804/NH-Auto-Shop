@@ -397,18 +397,23 @@ function setLanguage(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (translations[key] && translations[key][lang]) {
-            // Preserve child icons if present
-            const icon = el.querySelector('i');
-            if (icon) {
-                const textNode = Array.from(el.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
-                if (textNode) {
-                    textNode.textContent = " " + translations[key][lang];
+        if (translations[key] && translations[key][lang] !== undefined) {
+            const translatedText = translations[key][lang];
+            const icons = Array.from(el.querySelectorAll(':scope > i'));
+
+            if (icons.length === 1) {
+                const isIconFirst = el.firstElementChild && el.firstElementChild.tagName === 'I';
+                if (isIconFirst) {
+                    el.innerHTML = icons[0].outerHTML + ' ' + translatedText;
                 } else {
-                    el.innerHTML = icon.outerHTML + " " + translations[key][lang];
+                    el.innerHTML = translatedText + ' ' + icons[0].outerHTML;
                 }
+            } else if (icons.length > 1) {
+                const firstIcon = icons[0];
+                const lastIcon = icons[icons.length - 1];
+                el.innerHTML = firstIcon.outerHTML + ' ' + translatedText + ' ' + lastIcon.outerHTML;
             } else {
-                el.textContent = translations[key][lang];
+                el.textContent = translatedText;
             }
         }
     });
