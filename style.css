@@ -1960,13 +1960,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+    .top-bar {
+        padding: 0.4rem 0;
+        font-size: 0.78rem;
+    }
+
     .top-bar-container {
-        flex-direction: column;
-        gap: 0.4rem;
+        justify-content: center;
         text-align: center;
     }
 
-    .divider { display: none; }
+    .top-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        width: 100%;
+        font-size: 0.76rem;
+    }
+
+    .top-info span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+    }
+
+    .top-promo {
+        display: none;
+    }
+
+    .divider {
+        display: inline-block;
+        opacity: 0.4;
+    }
 
     .main-nav, .btn-phone, .header-actions .btn-primary, .action-divider {
         display: none;
