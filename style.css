@@ -1929,9 +1929,11 @@ h1, h2, h3, h4, h5, h6 {
     50% { box-shadow: 0 0 0 15px rgba(238, 43, 46, 0); }
 }
 
-/* --------------------------------------------------------------------------
-   15. RESPONSIVE BREAKPOINTS (MOBILE & TABLET OPTIMIZATIONS)
-   -------------------------------------------------------------------------- */
+/* ==========================================================================
+   15. RESPONSIVE BREAKPOINTS — MOBILE & TABLET
+   ========================================================================== */
+
+/* ── Tablet & Small Desktop (≤ 1024px) ───────────────────────────── */
 @media (max-width: 1024px) {
     .grid-4, .pms-benefits-grid, .hero-pillars {
         grid-template-columns: repeat(2, 1fr);
@@ -1949,14 +1951,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 3.2rem;
     }
 
-    .spotlight-carousel-track {
-        height: 420px;
-    }
-
-    .gallery-slide {
-        width: 82%;
-        height: 380px;
-    }
+    .spotlight-carousel-track { height: 420px; }
+    .gallery-slide { width: 82%; height: 380px; }
 }
 
 @media (max-width: 768px) {
