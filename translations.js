@@ -44,7 +44,7 @@ const translations = {
     },
     top_promo: {
         ko: "🔥 엔진오일 교환 시 30가지 항목 무료 점검 이벤트!",
-        en: "🔥 FREE 30-POINT PMS CHECK WITH OIL CHANGE!"
+        en: "🔥 OIL CHANGE WITH FREE 30-POINT PMS CHECKLIST!"
     },
     nav_home: {
         ko: "홈",
@@ -134,7 +134,7 @@ const translations = {
     },
     promo_badge_title: {
         ko: "특별 프로모션: 엔진오일 교환 시 30가지 PMS 항목 무료 점검!",
-        en: "SPECIAL PROMO: FREE 30-POINT PMS CHECKLIST INSPECTION WITH OIL CHANGE!"
+        en: "SPECIAL PROMO: OIL CHANGE WITH FREE 30-POINT PMS CHECKLIST!"
     },
     promo_badge_desc: {
         ko: "엔진, 브레이크, 하체, 배터리 등 차량 전반을 무료로 정밀 점검해 드립니다.",
