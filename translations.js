@@ -39,8 +39,8 @@ const translations = {
     // TOP ANNOUNCEMENT BAR & HEADER
     // ----------------------------------------------------------------------
     top_announcement: {
-        ko: "📍 비냔 라구나(Biñan, Laguna) 최고의 정비 & PMS 전문 카센터 | 📞 문의: 0966 965 0822 | ⏰ 월-토 08:00 - 18:00",
-        en: "📍 BIÑAN, LAGUNA'S TRUSTED CAR REPAIR & PMS SHOP | 📞 CALL: 0966 965 0822 | ⏰ MON-SAT: 8:00AM - 6:00PM"
+        ko: "📍 비냔 라구나(Biñan, Laguna) 최고의 정비 & PMS 전문 카센터 | 📞 문의: 0994 074 5106 / (049) 586-1146 | ⏰ 월-토 08:00 - 18:00",
+        en: "📍 BIÑAN, LAGUNA'S TRUSTED CAR REPAIR & PMS SHOP | 📞 CALL: 0994 074 5106 / (049) 586-1146 | ⏰ MON-SAT: 8:00AM - 6:00PM"
     },
     top_promo: {
         ko: "🔥 엔진오일 교환 시 30가지 항목 무료 점검 이벤트!",
@@ -79,6 +79,36 @@ const translations = {
         en: "Mon-Sat: 8:00AM - 6:00PM (Sun: Closed)"
     },
 
+    // Call Selection Modal
+    call_modal_title: {
+        ko: "문의 전화번호 선택",
+        en: "Select Contact Hotline"
+    },
+    call_modal_subtitle: {
+        ko: "원하시는 연락처를 선택하여 상담원과 바로 연결하세요.",
+        en: "Please choose your preferred hotline to connect with our team."
+    },
+    call_opt_1_title: {
+        ko: "휴대폰 직통 Hotline",
+        en: "Mobile Hotline"
+    },
+    call_opt_1_tag: {
+        ko: "Smart / 모바일 직통",
+        en: "Mobile / Cellular Line"
+    },
+    call_opt_2_title: {
+        ko: "매장 유선전화 Landline",
+        en: "Shop Landline Phone"
+    },
+    call_opt_2_tag: {
+        ko: "Biñan 매장 직통 일반전화",
+        en: "Biñan Shop Direct Landline"
+    },
+    btn_call_now: {
+        ko: "통화하기",
+        en: "Call Now"
+    },
+
     // ----------------------------------------------------------------------
     // HERO SECTION
     // ----------------------------------------------------------------------
@@ -111,8 +141,8 @@ const translations = {
         en: "Full systematic check of engine, brakes, fluids, suspension, battery, and safety systems."
     },
     btn_hero_call: {
-        ko: "0966 965 0822 전화 상담",
-        en: "Call 0966 965 0822"
+        ko: "전화 상담 문의",
+        en: "Call Our Hotline"
     },
     btn_hero_services: {
         ko: "정비 항목 보기",

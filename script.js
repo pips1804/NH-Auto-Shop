@@ -293,4 +293,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* ----------------------------------------------------------------------
+       9. CALL HOTLINE SELECTION MODAL
+       ---------------------------------------------------------------------- */
+    const callModal = document.getElementById('call-modal');
+    const callModalClose = document.getElementById('call-modal-close');
+    const callButtons = document.querySelectorAll('.btn-open-call-modal');
+
+    callButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (callModal) {
+                callModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    if (callModalClose) {
+        callModalClose.addEventListener('click', () => {
+            callModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
+    if (callModal) {
+        callModal.addEventListener('click', (e) => {
+            if (e.target === callModal) {
+                callModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
 });
