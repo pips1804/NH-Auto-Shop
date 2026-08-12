@@ -1573,6 +1573,299 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
+   10.5 CARWASH & DETAILING SECTION
+   -------------------------------------------------------------------------- */
+.cw-promo-badge-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(238, 43, 46, 0.25) 0%, rgba(248, 147, 31, 0.25) 100%);
+    border: 1px solid var(--color-auto-red);
+    color: #FF5252;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px rgba(238, 43, 46, 0.3);
+}
+
+.cw-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.cw-category-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: var(--transition);
+    position: relative;
+    box-shadow: var(--shadow-soft);
+}
+
+.cw-category-card:hover {
+    border-color: rgba(248, 147, 31, 0.4);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(248, 147, 31, 0.15);
+    transform: translateY(-4px);
+}
+
+.cw-category-card.featured {
+    background: linear-gradient(180deg, rgba(20, 22, 29, 0.95) 0%, rgba(15, 17, 24, 0.98) 100%);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+.cw-category-card.featured:hover {
+    border-color: var(--color-cyan-glow);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 210, 255, 0.25);
+}
+
+.cw-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.cw-header-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--color-nh-orange) 0%, var(--color-auto-red) 100%);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 6px 18px rgba(248, 147, 31, 0.35);
+    flex-shrink: 0;
+}
+
+.cw-header-icon.detailing-icon {
+    background: linear-gradient(135deg, #00D2FF 0%, var(--color-shop-blue) 100%);
+    box-shadow: 0 6px 18px rgba(0, 210, 255, 0.35);
+}
+
+.cw-header-text h3 {
+    font-size: 1.45rem;
+    color: #FFF;
+    margin-bottom: 0.25rem;
+}
+
+.cw-discount-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: var(--color-auto-red);
+    color: #FFF;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+}
+
+.cw-discount-pill.highlight {
+    background: linear-gradient(90deg, #00D2FF 0%, #2D6BE4 100%);
+}
+
+.cw-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.cw-service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.cw-service-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cw-item-info {
+    flex: 1;
+}
+
+.cw-item-info h4 {
+    font-size: 1.05rem;
+    color: #FFF;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.cw-item-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+}
+
+.cw-item-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    min-width: 140px;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.type-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.type-badge.sedan {
+    background: rgba(45, 107, 228, 0.2);
+    color: #4895EF;
+    border: 1px solid rgba(45, 107, 228, 0.35);
+}
+
+.type-badge.suv {
+    background: rgba(248, 147, 31, 0.2);
+    color: #F8931F;
+    border: 1px solid rgba(248, 147, 31, 0.35);
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--text-dim);
+    font-size: 0.82rem;
+}
+
+.new-price {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--color-cyan-glow);
+}
+
+.cw-gallery-wrapper {
+    margin-top: 4.5rem;
+}
+
+.cw-gallery-header h3 {
+    font-size: 1.75rem;
+    color: #FFF;
+    margin-bottom: 0.5rem;
+}
+
+.cw-gallery-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.cw-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.cw-photo-card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 230px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    background: #000;
+}
+
+.cw-photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.cw-photo-card:hover img {
+    transform: scale(1.08);
+}
+
+.cw-photo-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.85) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    pointer-events: none;
+}
+
+.cw-photo-overlay span {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #FFF;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cw-cta-banner {
+    margin-top: 3.5rem;
+    background: linear-gradient(135deg, rgba(20, 22, 29, 0.9) 0%, rgba(248, 147, 31, 0.1) 100%);
+    border: 1px solid var(--border-glow);
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 0 30px rgba(248, 147, 31, 0.15);
+}
+
+.cw-cta-content h3 {
+    font-size: 1.6rem;
+    color: #FFF;
+    margin-bottom: 0.4rem;
+}
+
+.cw-cta-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    max-width: 600px;
+}
+
+/* --------------------------------------------------------------------------
    11. APPOINTMENT & CONTACT SECTION
    -------------------------------------------------------------------------- */
 .contact-form-card {
@@ -2323,10 +2616,14 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Grid Collapse */
     .grid-2, .grid-3, .grid-4,
-    .services-grid, .reviews-grid,
+    .services-grid, .reviews-grid, .cw-pricing-grid,
     .pms-benefits-grid, .checklist-grid,
     .hero-pillars {
         grid-template-columns: 1fr;
+    }
+
+    .cw-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .section-padding { padding: 3.5rem 0; }
@@ -2409,6 +2706,88 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Footer */
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+    /* Carwash & Detailing Section Mobile Optimization */
+    .cw-service-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cw-item-info {
+        width: 100%;
+    }
+
+    .cw-item-info h4 {
+        font-size: 0.98rem;
+    }
+
+    .cw-item-info p {
+        font-size: 0.82rem;
+    }
+
+    .cw-item-pricing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+        min-width: 0;
+    }
+
+    .price-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.45rem 0.75rem;
+        box-sizing: border-box;
+    }
+
+    .cw-category-card {
+        padding: 1.25rem 0.9rem;
+        border-radius: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cw-card-header {
+        gap: 0.85rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cw-header-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+        border-radius: 12px;
+    }
+
+    .cw-header-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .cw-discount-pill {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
+
+    .cw-promo-badge-header {
+        font-size: 0.84rem;
+        padding: 0.35rem 0.9rem;
+    }
+
+    .cw-cta-banner {
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+    }
+
+    .cw-cta-content h3 {
+        font-size: 1.3rem;
+    }
 }
 
 /* ── Small Mobile (≤ 480px) ───────────────────────────────────────── */
@@ -2481,6 +2860,31 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 0.2rem;
         padding: 0.6rem;
         font-size: 0.88rem;
+    }
+
+    /* Carwash Photo Grid & Badges under 480px */
+    .lang-switcher {
+        gap: 2px;
+        padding: 2px;
+    }
+    .lang-switcher-btn {
+        padding: 0.2rem 0.45rem;
+        font-size: 0.72rem;
+    }
+    .cw-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    .cw-photo-card {
+        height: 140px;
+        border-radius: 10px;
+    }
+    .cw-photo-overlay {
+        padding: 0.6rem;
+    }
+    .cw-photo-overlay span {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
     }
 }
 
@@ -2572,6 +2976,28 @@ h1, h2, h3, h4, h5, h6 {
     .contact-form-card { padding: 1.25rem 0.85rem; }
     .floating-actions { bottom: 12px; right: 12px; gap: 6px; }
     .fab-btn { width: 42px; height: 42px; font-size: 1rem; }
+
+    /* Carwash Section under 375px */
+    .cw-photo-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    .cw-photo-card {
+        height: 160px;
+    }
+    .price-row {
+        padding: 0.35rem 0.45rem;
+    }
+    .type-badge {
+        font-size: 0.65rem;
+        padding: 0.1rem 0.35rem;
+    }
+    .old-price {
+        font-size: 0.76rem;
+    }
+    .new-price {
+        font-size: 0.95rem;
+    }
 }
 
 /* ── Tiny Smartphone (≤ 320px) ───────────────────────────────────── */

@@ -58,6 +58,10 @@ const translations = {
         ko: "정비 서비스",
         en: "Services"
     },
+    nav_carwash: {
+        ko: "세차 & 디테일링",
+        en: "Carwash & Detailing"
+    },
     nav_pms: {
         ko: "PMS 점검표",
         en: "PMS Checklist"
@@ -274,6 +278,43 @@ const translations = {
     srv_6_title: { ko: "에어컨 & 냉각 계통 정비", en: "Air Conditioning & Cooling System" },
     srv_6_desc: { ko: "에어컨 가스 충전, 콤프레서 정비, 라디에이터 청소 및 냉각수 누수 점검.", en: "Freon Recharge, Compressor Service, Radiator Clean & Leak Testing." },
     btn_view_full_flyer: { ko: "전체 서비스 전단지 / 가격표 확인", en: "View Full Service Price Flyer" },
+
+    // ----------------------------------------------------------------------
+    // CARWASH & DETAILING SECTION
+    // ----------------------------------------------------------------------
+    carwash_tag: { ko: "프리미엄 차량 케어", en: "CARWASH & DETAILING" },
+    carwash_title: { ko: "세차 & 디테일링 서비스", en: "CARWASH & DETAILING SERVICES" },
+    carwash_subtitle: { ko: "현재 전 항목 20% 특별 할인 프로모션 진행 중! 소형 세단부터 SUV까지 전문 디테일링 케어.", en: "Special 20% OFF Limited Time Promotion! Expert detailing from Sedans to SUVs." },
+    promo_badge_20: { ko: "🔥 20% 특별 할인 중", en: "🔥 20% OFF SPECIAL PROMO" },
+    cw_cat_carwash: { ko: "세차 서비스", en: "CARWASH SERVICES" },
+    cw_cat_detailing: { ko: "디테일링 서비스", en: "DETAILING SERVICES" },
+    cw_sedan_lbl: { ko: "세단 (Sedan)", en: "Sedan" },
+    cw_suv_lbl: { ko: "SUV / 대형 (SUV)", en: "SUV" },
+
+    // Carwash Items
+    cw_item_1_title: { ko: "베이직 워시 (Basic Wash)", en: "Basic Wash" },
+    cw_item_1_desc: { ko: "차량 외부 세차 및 타이어 세정 서비스.", en: "Complete exterior wash and tire cleaning." },
+    cw_item_2_title: { ko: "프리미엄 워시 (Prem. Wash)", en: "Prem. Wash" },
+    cw_item_2_desc: { ko: "외부 세차 및 실내 진공 청소 서비스.", en: "Exterior wash with interior vacuum and cleaning." },
+    cw_item_3_title: { ko: "워시 & 왁스 (Wash & Wax)", en: "Wash & Wax" },
+    cw_item_3_desc: { ko: "외부/실내 세차 및 차량 도장면 왁스 코팅.", en: "Full carwash with protective paint wax finish." },
+    cw_item_4_title: { ko: "엔진룸 워시 (Engine Wash)", en: "Engine Wash" },
+    cw_item_4_desc: { ko: "엔진룸 묵은 때 세척 및 클리닝 서비스.", en: "Thorough engine bay cleaning and wash." },
+
+    // Detailing Items
+    dt_item_1_title: { ko: "실내 디테일링 (Interior)", en: "Interior Detailing" },
+    dt_item_1_desc: { ko: "차량 실내 시트, 바닥 및 내장재 정밀 딥클리닝.", en: "Deep cleaning and restoration for car interior surfaces." },
+    dt_item_2_title: { ko: "외부 디테일링 (Exterior)", en: "Exterior Detailing" },
+    dt_item_2_desc: { ko: "차량 도장면 클리닝, 광택 복원 및 디테일링.", en: "Comprehensive exterior paint cleaning, polishing, and shine restoration." },
+    dt_item_3_title: { ko: "풀 디테일링 (Full Detailing)", en: "Full Detailing" },
+    dt_item_3_desc: { ko: "실내 디테일링 및 외부 광택 디테일링 종합 패키지.", en: "Complete interior and exterior detailing package." },
+    dt_item_4_title: { ko: "세라믹 코팅 (Ceramic Coating)", en: "Ceramic Coating" },
+    dt_item_4_desc: { ko: "차량 도장면 광택 유지 및 보호를 위한 세라믹 코팅.", en: "Long-lasting protective ceramic coating for paint shine and defense." },
+
+    // Showcase & CTA
+    cw_gallery_title: { ko: "세차 & 디테일링 시공 갤러리", en: "DETAILING WORK SHOWCASE" },
+    cw_gallery_desc: { ko: "NH Auto Shop 디테일링 전문가들의 거울 같은 광택과 완벽한 실내 케어 현장.", en: "Check out our master detailers delivering mirror-finish polish and spotless interiors." },
+    btn_book_carwash: { ko: "세차 & 디테일링 전화 문의", en: "Inquire & Book Detailing" },
 
     // ----------------------------------------------------------------------
     // GALLERY SHOWCASE SECTION

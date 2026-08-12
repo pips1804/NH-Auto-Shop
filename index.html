@@ -59,6 +59,7 @@
                     <li><a href="#about" class="nav-link" data-i18n="nav_about">소개</a></li>
                     <li><a href="#services" class="nav-link" data-i18n="nav_services">정비 서비스</a></li>
                     <li><a href="#pms" class="nav-link" data-i18n="nav_pms">PMS 점검표</a></li>
+                    <li><a href="#carwash" class="nav-link" data-i18n="nav_carwash">세차 & 디테일링</a></li>
                     <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">고객 후기</a></li>
                     <li><a href="#contact" class="nav-link" data-i18n="nav_contact">오시는 길 & 연락처</a></li>
                 </ul>
@@ -100,6 +101,7 @@
             <li><a href="#about" class="mobile-link" data-i18n="nav_about">소개</a></li>
             <li><a href="#services" class="mobile-link" data-i18n="nav_services">정비 서비스</a></li>
             <li><a href="#pms" class="mobile-link" data-i18n="nav_pms">PMS 점검표</a></li>
+            <li><a href="#carwash" class="mobile-link" data-i18n="nav_carwash">세차 & 디테일링</a></li>
             <li><a href="#reviews" class="mobile-link" data-i18n="nav_reviews">고객 후기</a></li>
             <li><a href="#contact" class="mobile-link" data-i18n="nav_contact">오시는 길 & 연락처</a></li>
         </ul>
@@ -513,6 +515,488 @@
         </div>
     </section>
 
+    <!-- WORKSHOP SHOWCASE GALLERY SECTION -->
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="gallery_tag">
+                    <i class="fa-solid fa-camera"></i> 작업장 둘러보기
+                </div>
+                <h2 class="section-title" data-i18n="gallery_title">
+                    NH AUTO SHOP 내부 전경
+                </h2>
+                <p class="section-subtitle" data-i18n="gallery_subtitle">
+                    비냔 라구나 최고의 깨끗하고 현대적인 정비 시설을 확인해보세요.
+                </p>
+            </div>
+
+            <!-- Spotlight Carousel Container -->
+            <div class="spotlight-carousel-wrapper">
+                <button class="carousel-btn btn-prev" id="gallery-prev" aria-label="Previous Image">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="spotlight-carousel-track" id="gallery-track">
+                    <div class="gallery-slide" data-index="0">
+                        <img src="img/site/img-1.jpg" alt="NH Auto Shop Hydraulic Lift Bay" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag" data-i18n="slide_1_tag"><i class="fa-solid fa-screwdriver-wrench"></i> 유압 리프트 & 수리 베이</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="1">
+                        <img src="img/site/img-2.jpg" alt="Underchassis & Lift Inspection" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag" data-i18n="slide_2_tag"><i class="fa-solid fa-car-side"></i> 하체 및 리프트 정밀 점검</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="2">
+                        <img src="img/site/img-3.jpg" alt="Professional Tool & Equipment Setup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag" data-i18n="slide_3_tag"><i class="fa-solid fa-toolbox"></i> 진단 스캐너 & 첨단 장비</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="3">
+                        <img src="img/site/img-4.jpg" alt="Engine Servicing & Oil Maintenance" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag" data-i18n="slide_4_tag"><i class="fa-solid fa-oil-can"></i> 엔진 정비 & 오일 교환</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide" data-index="4">
+                        <img src="img/site/img-5.jpg" alt="Master Mechanic Inspection" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag" data-i18n="slide_5_tag"><i class="fa-solid fa-user-check"></i> 전문 정비사의 차량 점검</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn btn-next" id="gallery-next" aria-label="Next Image">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="carousel-dots" id="gallery-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PMS FEATURED CHECKLIST SECTION -->
+    <section class="pms-section section-padding" id="pms">
+        <div class="container">
+            <div class="pms-banner">
+                <div class="pms-header-content">
+                    <span class="pms-badge" data-i18n="pms_tag"><i class="fa-solid fa-shield-heart"></i> 예방 정비 점검표</span>
+                    <h2 class="pms-title" data-i18n="pms_title">30가지 차량 정밀 점검 항목</h2>
+                    <p class="pms-tagline" data-i18n="pms_subtitle">도로 위 최상의 안전과 차량 성능 유지를 위해 30가지 핵심 시스템을 꼼꼼하게 점검합니다.</p>
+                </div>
+            </div>
+
+            <!-- Complete Check & Care Interactive List -->
+            <div class="pms-checklist-wrapper">
+                <div class="checklist-header">
+                    <h3><i class="fa-solid fa-clipboard-check"></i> <span data-i18n="pms_title">30가지 차량 정밀 점검 항목</span></h3>
+                    <p data-i18n="pms_subtitle">도로 위 최상의 안전과 차량 성능 유지를 위해 30가지 핵심 시스템을 꼼꼼하게 점검합니다.</p>
+                </div>
+
+                <div class="checklist-grid">
+                    <div class="check-item active">
+                        <div class="item-num">01</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_1_t">엔진 오일 수위 & 상태</h4>
+                            <p data-i18n="pms_item_1_d">오일량, 오도, 점도 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">02</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_2_t">엔진 오일 필터 점검</h4>
+                            <p data-i18n="pms_item_2_d">누유 및 찌꺼기 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">03</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_3_t">에어 클리너 필터</h4>
+                            <p data-i18n="pms_item_3_d">흡기 필터 먼지 청소/교체</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">04</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_4_t">냉각수 / 부동액 수위</h4>
+                            <p data-i18n="pms_item_4_d">보조 탱크 냉각수량 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">05</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_5_t">브레이크 오일 상태</h4>
+                            <p data-i18n="pms_item_5_d">수분 함량 및 수위 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">06</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_6_t">파워 스티어링 오일</h4>
+                            <p data-i18n="pms_item_6_d">핸들 유압 오일 확인</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">07</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_11_t">전륜 브레이크 패드</h4>
+                            <p data-i18n="pms_item_11_d">마모도 및 캘리퍼 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">08</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_14_t">쇼크업소버(쇼바) 누유</h4>
+                            <p data-i18n="pms_item_14_d">오일 누유 및 감쇄력 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">09</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_15_t">타이어 공기압 (PSI)</h4>
+                            <p data-i18n="pms_item_15_d">적정 공기압 맞춤</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="item-num">10</div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_item_21_t">배터리 전압 & 단자</h4>
+                            <p data-i18n="pms_item_21_d">전압 및 부식 상태 점검</p>
+                        </div>
+                    </div>
+
+                    <div class="check-item highlight-item">
+                        <div class="item-num"><i class="fa-solid fa-star"></i></div>
+                        <div class="item-content">
+                            <h4 data-i18n="pms_title">30가지 차량 정밀 점검 항목</h4>
+                            <p data-i18n="pms_banner_desc">지금 NH Auto Shop에 방문하셔서 전문가의 꼼꼼한 진단을 받아보세요.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pms-cta-box">
+                    <div class="cta-info">
+                        <h3 data-i18n="pms_banner_title">30가지 항목 종합 정밀 점검을 받고 싶으신가요?</h3>
+                        <p data-i18n="pms_banner_desc">지금 NH Auto Shop에 방문하셔서 전문가의 꼼꼼한 진단을 받아보세요.</p>
+                    </div>
+                    <a href="tel:09940745106" class="btn-primary btn-large btn-open-call-modal" data-i18n="btn_pms_inquire"><i class="fa-solid fa-phone"></i> 전화 문의하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARWASH & DETAILING SECTION -->
+    <section class="carwash-section section-padding bg-darker" id="carwash">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="carwash_tag">
+                    <i class="fa-solid fa-soap"></i> 프리미엄 차량 케어
+                </div>
+                <h2 class="section-title" data-i18n="carwash_title">
+                    세차 & 디테일링 서비스
+                </h2>
+                <p class="section-subtitle" data-i18n="carwash_subtitle">
+                    현재 전 항목 20% 특별 할인 프로모션 진행 중! 소형 세단부터 SUV까지 전문 디테일링 케어.
+                </p>
+                <div class="cw-promo-badge-header">
+                    <i class="fa-solid fa-fire-flame-curved"></i> <span data-i18n="promo_badge_20">🔥 20% 특별 할인 중</span>
+                </div>
+            </div>
+
+            <!-- Two Main Service Categories: Carwash & Detailing -->
+            <div class="cw-pricing-grid">
+
+                <!-- 1. CARWASH SERVICES CARD -->
+                <div class="cw-category-card">
+                    <div class="cw-card-header">
+                        <div class="cw-header-icon">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                        </div>
+                        <div class="cw-header-text">
+                            <h3 data-i18n="cw_cat_carwash">세차 서비스</h3>
+                            <span class="cw-discount-pill"><i class="fa-solid fa-tag"></i> 20% OFF</span>
+                        </div>
+                    </div>
+
+                    <div class="cw-services-list">
+                        <!-- Item 1: Basic Wash -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="cw_item_1_title">베이직 워시 (Basic Wash)</h4>
+                                <p data-i18n="cw_item_1_desc">차량 외부 세차 및 타이어 세정 서비스.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱200</span>
+                                        <span class="new-price">₱160</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱300</span>
+                                        <span class="new-price">₱240</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: Prem. Wash -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="cw_item_2_title">프리미엄 워시 (Prem. Wash)</h4>
+                                <p data-i18n="cw_item_2_desc">외부 세차 및 실내 진공 청소 서비스.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱400</span>
+                                        <span class="new-price">₱320</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱500</span>
+                                        <span class="new-price">₱400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Wash & Wax -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="cw_item_3_title">워시 & 왁스 (Wash & Wax)</h4>
+                                <p data-i18n="cw_item_3_desc">외부/실내 세차 및 차량 도장면 왁스 코팅.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱700</span>
+                                        <span class="new-price">₱560</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱900</span>
+                                        <span class="new-price">₱720</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Engine Wash -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="cw_item_4_title">엔진룸 워시 (Engine Wash)</h4>
+                                <p data-i18n="cw_item_4_desc">엔진룸 묵은 때 세척 및 클리닝 서비스.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱500</span>
+                                        <span class="new-price">₱400</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱600</span>
+                                        <span class="new-price">₱480</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. DETAILING SERVICES CARD -->
+                <div class="cw-category-card featured">
+                    <div class="cw-card-header">
+                        <div class="cw-header-icon detailing-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="cw-header-text">
+                            <h3 data-i18n="cw_cat_detailing">디테일링 서비스</h3>
+                            <span class="cw-discount-pill highlight"><i class="fa-solid fa-tag"></i> 20% OFF</span>
+                        </div>
+                    </div>
+
+                    <div class="cw-services-list">
+                        <!-- Item 1: Interior Detailing -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="dt_item_1_title">실내 디테일링 (Interior)</h4>
+                                <p data-i18n="dt_item_1_desc">차량 실내 시트, 바닥 및 내장재 정밀 딥클리닝.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱3,000</span>
+                                        <span class="new-price">₱2,400</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱4,000</span>
+                                        <span class="new-price">₱3,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: Exterior Detailing -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="dt_item_2_title">외부 디테일링 (Exterior)</h4>
+                                <p data-i18n="dt_item_2_desc">차량 도장면 클리닝, 광택 복원 및 디테일링.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱4,500</span>
+                                        <span class="new-price">₱3,600</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱6,500</span>
+                                        <span class="new-price">₱5,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Full Detailing -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="dt_item_3_title">풀 디테일링 (Full Detailing)</h4>
+                                <p data-i18n="dt_item_3_desc">실내 디테일링 및 외부 광택 디테일링 종합 패키지.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱6,000</span>
+                                        <span class="new-price">₱4,800</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱9,000</span>
+                                        <span class="new-price">₱7,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Ceramic Coating -->
+                        <div class="cw-service-item">
+                            <div class="cw-item-info">
+                                <h4 data-i18n="dt_item_4_title">세라믹 코팅 (Ceramic Coating)</h4>
+                                <p data-i18n="dt_item_4_desc">차량 도장면 광택 유지 및 보호를 위한 세라믹 코팅.</p>
+                            </div>
+                            <div class="cw-item-pricing">
+                                <div class="price-row">
+                                    <span class="type-badge sedan" data-i18n="cw_sedan_lbl">세단</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱12,000</span>
+                                        <span class="new-price">₱9,600</span>
+                                    </div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="type-badge suv" data-i18n="cw_suv_lbl">SUV</span>
+                                    <div class="price-box">
+                                        <span class="old-price">₱15,000</span>
+                                        <span class="new-price">₱12,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carwash & Detailing Photo Showcase Gallery -->
+            <div class="cw-gallery-wrapper">
+                <div class="cw-gallery-header text-center">
+                    <h3 data-i18n="cw_gallery_title"><i class="fa-solid fa-camera-retro"></i> 세차 & 디테일링 시공 갤러리</h3>
+                    <p data-i18n="cw_gallery_desc">NH Auto Shop 디테일링 전문가들의 거울 같은 광택과 완벽한 실내 케어 현장.</p>
+                </div>
+
+                <div class="cw-photo-grid">
+                    <div class="cw-photo-card">
+                        <img src="img/carwash-detailing/carwash1.jpg" alt="NH Auto Shop Professional Foam Carwash" loading="lazy">
+                        <div class="cw-photo-overlay">
+                            <span><i class="fa-solid fa-sparkles"></i> High-Pressure Foam Bath</span>
+                        </div>
+                    </div>
+                    <div class="cw-photo-card">
+                        <img src="img/carwash-detailing/carwash2.jpg" alt="NH Auto Shop Deep Interior Steam Detailing" loading="lazy">
+                        <div class="cw-photo-overlay">
+                            <span><i class="fa-solid fa-broom"></i> Deep Interior Sanitization</span>
+                        </div>
+                    </div>
+                    <div class="cw-photo-card">
+                        <img src="img/carwash-detailing/carwash3.jpg" alt="NH Auto Shop Exterior Polish & Gloss" loading="lazy">
+                        <div class="cw-photo-overlay">
+                            <span><i class="fa-solid fa-wand-magic-sparkles"></i> Mirror Finish Paint Correction</span>
+                        </div>
+                    </div>
+                    <div class="cw-photo-card">
+                        <img src="img/carwash-detailing/carwash4.jpg" alt="NH Auto Shop Engine Bay Wash & Shield" loading="lazy">
+                        <div class="cw-photo-overlay">
+                            <span><i class="fa-solid fa-gears"></i> Engine Bay Wash & Protection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carwash Section Bottom CTA -->
+            <div class="cw-cta-banner text-center">
+                <div class="cw-cta-content">
+                    <h3><i class="fa-solid fa-calendar-check"></i> <span data-i18n="promo_badge_20">🔥 20% 특별 할인 중</span></h3>
+                    <p data-i18n="carwash_subtitle">현재 전 항목 20% 특별 할인 프로모션 진행 중! 소형 세단부터 SUV까지 전문 디테일링 케어.</p>
+                </div>
+                <a href="tel:09940745106" class="btn-primary btn-large btn-open-call-modal" data-i18n="btn_book_carwash">
+                    <i class="fa-solid fa-phone"></i> 세차 & 디테일링 전화 문의
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- REVIEWS SECTION -->
     <section class="reviews-section section-padding bg-darker" id="reviews">
         <div class="container">
@@ -729,6 +1213,7 @@
                         <li><a href="#home"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_home">홈</span></a></li>
                         <li><a href="#about"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_about">소개</span></a></li>
                         <li><a href="#services"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_services">정비 서비스</span></a></li>
+                        <li><a href="#carwash"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_carwash">세차 & 디테일링</span></a></li>
                         <li><a href="#pms"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_pms">PMS 점검표</span></a></li>
                         <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_reviews">고객 후기</span></a></li>
                         <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> <span data-i18n="nav_contact">오시는 길 & 연락처</span></a></li>
@@ -739,6 +1224,7 @@
                     <h4 data-i18n="footer_services_offered">제공 서비스</h4>
                     <ul class="footer-links">
                         <li><a href="#services"><i class="fa-solid fa-check"></i> <span data-i18n="footer_srv_1">PMS 예방 정비</span></a></li>
+                        <li><a href="#carwash"><i class="fa-solid fa-check"></i> <span data-i18n="nav_carwash">세차 & 디테일링</span></a></li>
                         <li><a href="#services"><i class="fa-solid fa-check"></i> <span data-i18n="footer_srv_2">브레이크 수리</span></a></li>
                         <li><a href="#services"><i class="fa-solid fa-check"></i> <span data-i18n="footer_srv_3">하체/서스펜션 수리</span></a></li>
                         <li><a href="#services"><i class="fa-solid fa-check"></i> <span data-i18n="footer_srv_4">진단 스캐너 점검</span></a></li>
