@@ -82,16 +82,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ----------------------------------------------------------------------
-       4. SERVICE MENU FLYER LIGHTBOX MODAL
+       4. PROMO FLYERS GALLERY LIGHTBOX MODAL
        ---------------------------------------------------------------------- */
     const btnOpenFlyer = document.getElementById('btn-open-flyer');
     const flyerModal = document.getElementById('flyer-modal');
     const flyerClose = document.getElementById('flyer-close');
+    const flyerSlides = document.querySelectorAll('.flyer-slide');
+    const flyerTabs = document.querySelectorAll('.flyer-tab-btn');
+    const flyerDots = document.querySelectorAll('.flyer-dot');
+    const flyerPrev = document.getElementById('flyer-prev');
+    const flyerNext = document.getElementById('flyer-next');
+    const flyerCounter = document.getElementById('flyer-counter');
+
+    let currentFlyerIndex = 0;
+
+    function showFlyerSlide(index) {
+        if (!flyerSlides || flyerSlides.length === 0) return;
+        currentFlyerIndex = (index + flyerSlides.length) % flyerSlides.length;
+
+        flyerSlides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentFlyerIndex);
+        });
+
+        flyerTabs.forEach((tab, i) => {
+            tab.classList.toggle('active', i === currentFlyerIndex);
+        });
+
+        flyerDots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentFlyerIndex);
+        });
+
+        if (flyerCounter) {
+            flyerCounter.textContent = `${currentFlyerIndex + 1} / ${flyerSlides.length}`;
+        }
+    }
 
     if (btnOpenFlyer && flyerModal) {
         btnOpenFlyer.addEventListener('click', () => {
             flyerModal.classList.add('active');
             document.body.style.overflow = 'hidden';
+            showFlyerSlide(currentFlyerIndex);
         });
     }
 
@@ -107,18 +137,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.style.overflow = '';
             }
         });
+
+        document.addEventListener('keydown', (e) => {
+            if (!flyerModal.classList.contains('active')) return;
+            if (e.key === 'Escape') {
+                flyerModal.classList.remove('active');
+                document.body.style.overflow = '';
+            } else if (e.key === 'ArrowLeft') {
+                showFlyerSlide(currentFlyerIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                showFlyerSlide(currentFlyerIndex + 1);
+            }
+        });
     }
 
-    /* ----------------------------------------------------------------------
-       5. INTERACTIVE PMS CHECKLIST ITEMS
-       ---------------------------------------------------------------------- */
-    const checkItems = document.querySelectorAll('.check-item');
-    checkItems.forEach(item => {
-        item.addEventListener('click', () => {
-            checkItems.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
+    if (flyerPrev) {
+        flyerPrev.addEventListener('click', () => {
+            showFlyerSlide(currentFlyerIndex - 1);
+        });
+    }
+
+    if (flyerNext) {
+        flyerNext.addEventListener('click', () => {
+            showFlyerSlide(currentFlyerIndex + 1);
+        });
+    }
+
+    flyerTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const slideIndex = parseInt(tab.getAttribute('data-slide'), 10);
+            showFlyerSlide(slideIndex);
         });
     });
+
+    flyerDots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const slideIndex = parseInt(dot.getAttribute('data-slide'), 10);
+            showFlyerSlide(slideIndex);
+        });
+    });
+
 
     /* ----------------------------------------------------------------------
        6. WORKSHOP SPOTLIGHT COVERFLOW CAROUSEL

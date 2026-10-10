@@ -153,8 +153,8 @@ const translations = {
         en: "Explore Our Services"
     },
     btn_hero_flyer: {
-        ko: "가격표 / 전단지 보기",
-        en: "View Price Flyer"
+        ko: "전단지 보기",
+        en: "View Flyers"
     },
 
     // Hero 4 Pillars
@@ -284,8 +284,8 @@ const translations = {
     // ----------------------------------------------------------------------
     carwash_tag: { ko: "프리미엄 차량 케어", en: "CARWASH & DETAILING" },
     carwash_title: { ko: "세차 & 디테일링 서비스", en: "CARWASH & DETAILING SERVICES" },
-    carwash_subtitle: { ko: "현재 전 항목 20% 특별 할인 프로모션 진행 중! 소형 세단부터 SUV까지 전문 디테일링 케어.", en: "Special 20% OFF Limited Time Promotion! Expert detailing from Sedans to SUVs." },
-    promo_badge_20: { ko: "🔥 20% 특별 할인 중", en: "🔥 20% OFF SPECIAL PROMO" },
+    carwash_subtitle: { ko: "소형 세단부터 SUV까지 전문 디테일링 및 맞춤형 세차 케어.", en: "Expert detailing and carwash care from Sedans to SUVs." },
+    cw_cta_title: { ko: "프리미엄 세차 & 디테일링 케어 예약", en: "Book Premium Carwash & Detailing Service" },
     cw_cat_carwash: { ko: "세차 서비스", en: "CARWASH SERVICES" },
     cw_cat_detailing: { ko: "디테일링 서비스", en: "DETAILING SERVICES" },
     cw_sedan_lbl: { ko: "세단 (Sedan)", en: "Sedan" },
@@ -453,7 +453,13 @@ const translations = {
     footer_srv_3: { ko: "하체/서스펜션 수리", en: "Suspension Repair" },
     footer_srv_4: { ko: "진단 스캐너 점검", en: "Computer Diagnostics" },
     footer_contact_info: { ko: "연락처 정보", en: "Contact Info" },
-    footer_rights: { ko: "© 2026 NH Auto Shop. 판권 소유.", en: "© 2026 NH Auto Shop. All Rights Reserved." }
+    footer_rights: { ko: "© 2026 NH Auto Shop. 판권 소유.", en: "© 2026 NH Auto Shop. All Rights Reserved." },
+
+    // Flyer Modal Gallery
+    flyer_modal_title: { ko: "NH AUTO SHOP 공식 프로모션 전단지", en: "NH AUTO SHOP Official Promotion Flyers" },
+    flyer_modal_sub: { ko: "현재 진행 중인 특별 프로모션 전단지를 확인해보세요.", en: "Check out our latest special promotion flyers." },
+    flyer_tab_pms: { ko: "PMS 프로모션 전단지", en: "PMS Promo Flyer" },
+    flyer_tab_detailing: { ko: "디테일링 프로모션 전단지", en: "Detailing Promo Flyer" }
 };
 
 // Global state
